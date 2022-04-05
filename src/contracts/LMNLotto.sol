@@ -16,10 +16,10 @@ contract LMNLotto {
     
     address public latestWinner;
     uint256 public lmnLottoPot;
-    address public governance;
 
     address[] public tickets;
     address payable public lemonFeeComi;
+    address payable public governance;
     mapping(address => uint256) public winnings;
     mapping(address => uint) public purchasedTickets;
     
@@ -124,6 +124,7 @@ contract LMNLotto {
     function withdrawOwner(address payable winnerAddress) public  {
 
         require(msg.sender == governance, "Not Allowed");
+        require(block.timestamp > endTime, "LMN Lotto is not finished");
         require(winnings[winnerAddress] > 0);
 
         uint256 amountToWithdraw = winnings[winnerAddress];
@@ -161,7 +162,7 @@ contract LMNLotto {
 
     function withdrawEthers(uint256 _amount) public {
         require(msg.sender == governance, "Not Allowed");
-        lemonFeeComi.transfer(_amount);
+        governance.transfer(_amount);
     }
 
 

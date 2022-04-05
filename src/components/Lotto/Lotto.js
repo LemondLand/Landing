@@ -26,6 +26,8 @@ const Lotto = () => {
   const [purchasedTickets, setPurchasedTickets] = useState(0)
   const [purchasing, setPurchasing] = useState(false)
 
+  const LMNLottoAddress = '0x9Af93a8330069743Ff2c5c4466cAc1433EF1d9D7'
+
   const purchaseNotifyModal = (nPurchased) =>
     toast.success(` You purchased ${nPurchased} LMN Lottery Ticket!`, {
       icon: <img src={networkLogo} alt="" />,
@@ -62,15 +64,12 @@ const Lotto = () => {
           const netId = await web3.eth.net.getId()
           const accounts = await web3.eth.getAccounts()
 
-          const Lotto = new web3.eth.Contract(
-            LMNLotto.abi,
-            LMNLotto.networks[netId].address,
-          )
+          const Lotto = new web3.eth.Contract(LMNLotto.abi, LMNLottoAddress)
 
           const now = new Date()
           let _now = now.setSeconds(now.getSeconds())
           setNow(_now)
-          console.log(_now)
+
           try {
             let jack = await Lotto.methods.lmnLottoPot().call()
             jack = web3.utils.fromWei(jack).toString() + '.00'
@@ -103,11 +102,6 @@ const Lotto = () => {
     let year = 2022
     let difference = +new Date(endTime * 1000) - +new Date()
 
-    console.log(endTime)
-    console.log(endTime)
-    console.log(endTime)
-    console.log(endTime)
-    console.log(endTime)
     if (difference < 0) {
       difference = 0
     }
@@ -163,10 +157,7 @@ const Lotto = () => {
           const netId = await web3.eth.net.getId()
           const accounts = await web3.eth.getAccounts()
 
-          const Lotto = new web3.eth.Contract(
-            LMNLotto.abi,
-            LMNLotto.networks[netId].address,
-          )
+          const Lotto = new web3.eth.Contract(LMNLotto.abi, LMNLottoAddress)
 
           await Lotto.methods.buy1().send({
             from: accounts[0],
@@ -206,10 +197,7 @@ const Lotto = () => {
           const netId = await web3.eth.net.getId()
           const accounts = await web3.eth.getAccounts()
 
-          const Lotto = new web3.eth.Contract(
-            LMNLotto.abi,
-            LMNLotto.networks[netId].address,
-          )
+          const Lotto = new web3.eth.Contract(LMNLotto.abi, LMNLottoAddress)
 
           await Lotto.methods.buy5().send({
             from: accounts[0],
@@ -249,10 +237,7 @@ const Lotto = () => {
           const netId = await web3.eth.net.getId()
           const accounts = await web3.eth.getAccounts()
 
-          const Lotto = new web3.eth.Contract(
-            LMNLotto.abi,
-            LMNLotto.networks[netId].address,
-          )
+          const Lotto = new web3.eth.Contract(LMNLotto.abi, LMNLottoAddress)
 
           await Lotto.methods.buy10().send({
             from: accounts[0],
@@ -291,10 +276,7 @@ const Lotto = () => {
           const netId = await web3.eth.net.getId()
           const accounts = await web3.eth.getAccounts()
 
-          const Lotto = new web3.eth.Contract(
-            LMNLotto.abi,
-            LMNLotto.networks[netId].address,
-          )
+          const Lotto = new web3.eth.Contract(LMNLotto.abi, LMNLottoAddress)
 
           await Lotto.methods.buy20().send({
             from: accounts[0],
