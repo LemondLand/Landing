@@ -1,0 +1,196 @@
+@import '../../breakpoint.scss';
+.lotto {
+  background: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .lotto-hero {
+    margin-top: 50px;
+    width: 73.5%;
+    position: relative;
+    height: 670px;
+    background-image: url(../../assets/lotto-bg.png);
+    border-radius: 40px;
+    .ticket-below {
+      position: absolute;
+      bottom: 10px;
+      right: 30px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 21px;
+      font-weight: 600;
+      img {
+        margin-bottom: 5px;
+        width: 24px;
+      }
+    }
+    .lotto-hero-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      .lotto-dolar {
+        position: absolute;
+        right: 10px;
+        letter-spacing: -3px;
+        font-size: 64px;
+        top: 30px;
+        border-radius: 10px;
+        font-weight: 300;
+        font-style: italic;
+        width: 300px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #60df00;
+        @include media('<=tablet') {
+          font-size: 32px;
+          top: 110px;
+        }
+      }
+      .lotto-ticket-show {
+        position: absolute;
+        left: 50px;
+        font-size: 21px;
+        top: 50px;
+        border-radius: 10px;
+        font-weight: bold;
+        width: 300px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border: #c7fe9c 2px solid;
+        color: #222222;
+        img {
+          width: 32px;
+        }
+        @include media('<=tablet') {
+          font-size: 16px;
+          width: 200px;
+          padding: 2px;
+          top: 20px;
+          img {
+            width: 32px;
+          }
+        }
+      }
+      .title {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 50px;
+        color: #222222;
+        @include media('<=tablet') {
+          font-size: 20px;
+        }
+      }
+      .number {
+        font-size: 71px;
+        font-weight: bold;
+        color: #60df00;
+        display: flex;
+        align-items: center;
+        @include media('<=tablet') {
+          font-size: 48px;
+        }
+        img {
+          margin-left: 20px;
+          width: 64px;
+        }
+      }
+      .prize {
+        font-size: 30px;
+        color: #222222;
+        margin-top: -10px;
+      }
+      .timer {
+        margin-bottom: 30px;
+      }
+      .timer-text {
+        margin-top: 50px;
+        font-size: 20px;
+        color: #959595;
+      }
+      .lotto-input {
+        display: flex;
+        align-items: center;
+        width: 35%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        img {
+          width: 64px;
+        }
+        .ticket-count {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          justify-content: space-between;
+          margin-left: auto;
+          margin-bottom: 10px;
+          @include media('<=tablet') {
+            width: 200%;
+            margin-left: 0;
+          }
+          button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            width: 17%;
+            height: 60px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: 600;
+            border: none;
+            background: linear-gradient(
+              90deg,
+              rgba(216, 223, 0, 1) 0%,
+              rgba(96, 223, 0, 1) 100%
+            );
+            color: #ffffff;
+            transition: 0.5s ease;
+            @include media('<=tablet') {
+              font-size: 16px;
+              width: 50px;
+              margin-right: 5px;
+            }
+            &:hover {
+              transform: translateX(0px);
+              width: 120px;
+              &::after {
+                content: url('../../assets/ticket.png');
+                width: 32px;
+                margin-left: 10px;
+                transition: 0.5s ease all;
+                margin-top: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .lotto-winners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 73.5%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    cursor: grab;
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+  }
+}

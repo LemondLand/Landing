@@ -1,0 +1,135 @@
+@import "../../breakpoint.scss";
+.mint {
+    width: 75%;
+    margin: auto;
+    margin-top: 100px;
+    overflow: hidden;
+    .mint-box-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .mint-box-mobile {
+            user-select: none;
+            pointer-events: none;
+            width: 100%;
+            margin: auto;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            padding-left: 20px;
+            justify-content: center;
+            border-radius: 30px;
+            background-color: #f5f5f5;
+            color: #444444;
+            overflow: hidden;
+            @include media("<=tablet") {
+                width: 250px;
+            }
+            span {
+                text-align: left;
+                font-size: 30px;
+                font-weight: 600;
+            }
+            p {
+                color: #444444;
+                font-size: 20px;
+                @include media("<=tablet") {
+                    font-size: 20px;
+                }
+            }
+        }
+        .mint-box {
+            width: 25%;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px;
+            justify-content: center;
+            border-radius: 30px;
+            background-color: #f5f5f5;
+            color: #444444;
+            span {
+                font-size: 30px;
+                font-weight: 600;
+            }
+            p {
+                color: #444444;
+                font-size: 20px;
+            }
+            &:hover {
+                color: #60df00;
+                border: 1px solid #60df00;
+                background-color: #ffffff;
+            }
+        }
+    }
+    .mint-hero {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+        p {
+            font-size: 30px;
+            letter-spacing: 3px;
+            color: #444444;
+        }
+        button:hover {
+            cursor: pointer;
+        }
+        button {
+            color: #444444;
+            background-color: #dbdbdb;
+            border: none;
+            margin-top: 100px;
+            width: 300px;
+            height: 55px;
+            border-radius: 10px;
+            margin-bottom: 200px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            outline: none;
+            position: relative;
+            overflow: hidden;
+        }
+        /*button:before (attr data-hover)*/
+        button:hover:before {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+        button:before {
+            content: url(../../assets/three-dots.svg);
+            position: absolute;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transform: translate(0, 100%);
+            transition: all 0.3s ease-in-out;
+        }
+        /*button div (button text before hover)*/
+        button:hover div {
+            opacity: 0;
+            transform: translate(0, -100%);
+        }
+        button div {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 0.8em;
+            transition: all 0.3s ease-in-out;
+        }
+        .obj {
+            position: absolute;
+            right: 0px;
+            z-index: -10;
+        }
+    }
+}

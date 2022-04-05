@@ -1,0 +1,271 @@
+@import "../../breakpoint.scss";
+.savings-container {
+    min-height: 100vh;
+    background: #f5f5f5;
+    .savings {
+        width: 75%;
+        margin: auto;
+        padding-top: 120px;
+        display: flex;
+        justify-content: space-between;
+        .savings-left {
+            font-size: 30px;
+            @include media("<=tablet") {
+                font-size: 19px;
+            }
+            .savings-title {
+                display: flex;
+                align-items: center;
+                .title-line {
+                    width: 80px;
+                    height: 4px;
+                    border-radius: 3px;
+                    background-color: #60df00;
+                }
+                span {
+                    font-size: 40px;
+                    color: #60df00;
+                    margin-left: 20px;
+                }
+            }
+            span {
+                margin-top: 20px;
+                line-height: normal;
+                margin-bottom: 20px;
+                color: #444444;
+                font-weight: bold;
+            }
+            p {
+                color: #444444;
+            }
+            button:hover {
+                cursor: pointer;
+            }
+            button {
+                width: 300px;
+                height: 55px;
+                border-radius: 10px;
+                font-weight: bold;
+                border: none;
+                color: white;
+                background: #60df00;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                outline: none;
+                position: relative;
+                margin-top: 115px;
+                padding: 15px 50px;
+                overflow: hidden;
+                img {
+                    display: none;
+                }
+                @include media("<=tablet") {
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+                    img {
+                        display: inline;
+                    }
+                }
+            }
+            /*button:before (attr data-hover)*/
+            button:hover:before {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+            button:before {
+                content: url(../../assets/btn-wheel.svg);
+                position: absolute;
+                left: 0;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transform: translate(0, 100%);
+                transition: all 0.3s ease-in-out;
+            }
+            /*button div (button text before hover)*/
+            button:hover div {
+                opacity: 0;
+                transform: translate(0, -100%);
+            }
+            button div {
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-weight: 800;
+                font-size: 0.8em;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        .savings-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 50%;
+            .coin-box {
+                margin-bottom: 20px;
+                border-radius: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: white;
+                width: 500px;
+                height: 100px;
+                transition: 0.5s ease;
+                &:hover {
+                    transform: translate(20px, -15px);
+                }
+                @include media("<=tablet") {
+                    width: 300px;
+                    height: 70px;
+                }
+                .coin-box-left {
+                    margin-left: 25px;
+                    display: flex;
+                    align-items: center;
+                    .coin-logo {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 10px;
+                        background-color: transparent;
+                        .first-icon {
+                            z-index: 1000;
+                            position: absolute;
+                            transform: translateY(-8px) translateX(-8px);
+                            width: 80px;
+                        }
+                        .second-icon {
+                            z-index: 200;
+                            position: absolute;
+                            transform: translateY(10px) translateX(10px);
+                            width: 35px;
+                        }
+                        @include media("<=tablet") {
+                            width: 40px;
+                            height: 40px;
+                            img {
+                                width: 40px;
+                            }
+                        }
+                    }
+                    .coin-name {
+                        margin-left: 15px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        span {
+                            font-size: 14px;
+                            color: #959595;
+                            font-weight: bold;
+                            &:first-child {
+                                color: #444444;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+                .coin-box-right {
+                    margin-right: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    span {
+                        font-size: 14px;
+                        color: #959595;
+                        font-weight: bold;
+                        &:first-child {
+                            font-size: 18px;
+                            color: #60df00;
+                        }
+                    }
+                }
+                .coin-box-right1 {
+                    margin-right: 205px;
+                    margin-top: 405px;
+                    margin-bottom: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    span {
+                        font-size: 14px;
+                        color: #959595;
+                        font-weight: bold;
+                        &:first-child {
+                            font-size: 18px;
+                            color: #60df00;
+                        }
+                    }
+                }
+            }
+            button:hover {
+                cursor: pointer;
+            }
+            button {
+                color: #444444;
+                background-color: #dbdbdb;
+                margin-top: 10px;
+                border: none;
+                width: 300px;
+                height: 55px;
+                border-radius: 10px;
+                margin-bottom: 200px;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                outline: none;
+                position: relative;
+                overflow: hidden;
+            }
+            /*button:before (attr data-hover)*/
+            button:hover:before {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+            button:before {
+                content: url(../../assets/three-dots.svg);
+                position: absolute;
+                left: 0;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transform: translate(0, 100%);
+                transition: all 0.3s ease-in-out;
+            }
+            /*button div (button text before hover)*/
+            button:hover div {
+                opacity: 0;
+                transform: translate(0, -100%);
+            }
+            button div {
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-size: 0.8em;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        .coin-box-right1 {
+            margin-right: 25px;
+            margin-top: 0px;
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-center;
+            span {
+                font-size: 8px;
+                color: #959595;
+                font-weight: bold;
+                &:first-child {
+                    font-size: 10px;
+                    color: #232422;
+                }
+            }
+        }
+    }
+}

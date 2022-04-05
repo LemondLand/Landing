@@ -1,0 +1,154 @@
+@import "../../breakpoint.scss";
+$speed: 1s;
+$total: 31;
+@for $i from 1 through $total {
+    $scale: random(2) - 0.4;
+    .hero .logo:nth-child(#{$i}) {
+        left: random(110) * 1% - 16;
+        animation: raise#{$i} 6+random(40)+s linear infinite;
+        animation-delay: random(5) - 5 + s;
+        transform: rotate(random(360) + deg);
+        z-index: $i - 7;
+        filter: blur($i - 20 + px);
+        @keyframes raise#{$i} {
+            to {
+                bottom: 150vh;
+                transform: scale(0.3 * $i - 0.6) rotate(random(360) + deg);
+            }
+        }
+    }
+}
+
+.hero {
+    position: relative;
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(29, 29, 29);
+    .wrap {
+        position: absolute;
+        display: flex;
+        width: 90%;
+        margin-left: 10%;
+        perspective-origin: 50% 50%;
+        opacity: 0.5;
+        .logo {
+            position: absolute;
+            bottom: -100vh;
+            width: 100px;
+            transform-style: preserve-3d;
+        }
+    }
+    .text-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    h1 {
+        z-index: 100;
+        cursor: default;
+        font-size: 60px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+            font-size: 70px;
+        }
+    }
+    p {
+        cursor: default;
+        z-index: 100;
+        margin-bottom: 5%;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+            font-size: 40px;
+        }
+    }
+    .normal-btn {
+        z-index: 100;
+        color: white;
+        background-color: #60df00;
+        border: none;
+        width: 300px;
+        height: 55px;
+        border-radius: 10px;
+        margin-bottom: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        img {
+            margin-left: 20px;
+        }
+    }
+    .anim-btn {
+        z-index: 100;
+        color: white;
+        background-color: #60df00;
+        border: none;
+        width: 300px;
+        height: 55px;
+        border-radius: 10px;
+        margin-bottom: 150px;
+        font-weight: bold;
+    }
+    a {
+        img {
+            transition: all ease 0.5s;
+            position: absolute;
+            bottom: 0;
+            &:hover {
+                transform: translateY(20px);
+            }
+        }
+    }
+    .anim-btn:hover {
+        cursor: pointer;
+    }
+    .anim-btn {
+        background: #60df00;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+        position: relative;
+        padding: 15px 50px;
+        overflow: hidden;
+    }
+    /*button:before (attr data-hover)*/
+    .anim-btn:hover:before {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    .anim-btn:before {
+        content: url(../../assets/btn-wheel.svg);
+        position: absolute;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transform: translate(0, 100%);
+        transition: all 0.3s ease-in-out;
+    }
+    /*button div (button text before hover)*/
+    .anim-btn:hover div {
+        opacity: 0;
+        transform: translate(0, -100%);
+    }
+    .anim-btn div {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 800;
+        font-size: 0.8em;
+        transition: all 0.3s ease-in-out;
+    }
+}
