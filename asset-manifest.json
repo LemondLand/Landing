@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/Landing/static/css/main.55f9c3d5.chunk.css",
+    "main.js": "/Landing/static/js/main.d5f02d18.chunk.js",
+    "main.js.map": "/Landing/static/js/main.d5f02d18.chunk.js.map",
+    "runtime-main.js": "/Landing/static/js/runtime-main.024217ee.js",
+    "runtime-main.js.map": "/Landing/static/js/runtime-main.024217ee.js.map",
+    "static/css/2.3b2e5103.chunk.css": "/Landing/static/css/2.3b2e5103.chunk.css",
+    "static/js/2.833a9211.chunk.js": "/Landing/static/js/2.833a9211.chunk.js",
+    "static/js/2.833a9211.chunk.js.map": "/Landing/static/js/2.833a9211.chunk.js.map",
+    "static/js/3.b031c1b3.chunk.js": "/Landing/static/js/3.b031c1b3.chunk.js",
+    "static/js/3.b031c1b3.chunk.js.map": "/Landing/static/js/3.b031c1b3.chunk.js.map",
+    "index.html": "/Landing/index.html",
+    "static/css/2.3b2e5103.chunk.css.map": "/Landing/static/css/2.3b2e5103.chunk.css.map",
+    "static/css/main.55f9c3d5.chunk.css.map": "/Landing/static/css/main.55f9c3d5.chunk.css.map",
+    "static/js/2.833a9211.chunk.js.LICENSE.txt": "/Landing/static/js/2.833a9211.chunk.js.LICENSE.txt",
+    "static/media/EWD.74e5377f.png": "/Landing/static/media/EWD.74e5377f.png",
+    "static/media/bg-wheel.46e36009.svg": "/Landing/static/media/bg-wheel.46e36009.svg",
+    "static/media/Savings.scss": "/Landing/static/media/three-dots.f7e289ce.svg",
+    "static/media/down-arrow.640d3d70.svg": "/Landing/static/media/down-arrow.640d3d70.svg",
+    "static/media/ewt-logo.1bc4703b.svg": "/Landing/static/media/ewt-logo.1bc4703b.svg",
+    "static/media/lamanade.29485f1f.png": "/Landing/static/media/lamanade.29485f1f.png",
+    "static/media/lemon-logo.04b30d5c.svg": "/Landing/static/media/lemon-logo.04b30d5c.svg",
+    "static/media/lemon-network.fef5bc9c.png": "/Landing/static/media/lemon-network.fef5bc9c.png",
+    "static/media/lemon-popup.78402e37.png": "/Landing/static/media/lemon-popup.78402e37.png",
+    "static/media/lemonNetwork.b758fccb.png": "/Landing/static/media/lemonNetwork.b758fccb.png",
+    "static/media/lemonade.692b8da3.svg": "/Landing/static/media/lemonade.692b8da3.svg",
+    "static/media/logonegre.2e2d5d1a.png": "/Landing/static/media/logonegre.2e2d5d1a.png",
+    "static/media/Lotto.scss": "/Landing/static/media/lotto-bg.a6dd4a58.png",
+    "static/media/mint-obj.b4499ec4.png": "/Landing/static/media/mint-obj.b4499ec4.png",
+    "static/media/susu.3533aeba.png": "/Landing/static/media/susu.3533aeba.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.024217ee.js",
+    "static/css/2.3b2e5103.chunk.css",
+    "static/js/2.833a9211.chunk.js",
+    "static/css/main.55f9c3d5.chunk.css",
+    "static/js/main.d5f02d18.chunk.js"
+  ]
+}
