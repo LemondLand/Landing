@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Landing/static/css/main.0ab3b5ea.chunk.css",
-    "main.js": "/Landing/static/js/main.70479a17.chunk.js",
-    "main.js.map": "/Landing/static/js/main.70479a17.chunk.js.map",
+    "main.css": "/Landing/static/css/main.24db3147.chunk.css",
+    "main.js": "/Landing/static/js/main.f76b7754.chunk.js",
+    "main.js.map": "/Landing/static/js/main.f76b7754.chunk.js.map",
     "runtime-main.js": "/Landing/static/js/runtime-main.024217ee.js",
     "runtime-main.js.map": "/Landing/static/js/runtime-main.024217ee.js.map",
     "static/css/2.3b2e5103.chunk.css": "/Landing/static/css/2.3b2e5103.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.b031c1b3.chunk.js.map": "/Landing/static/js/3.b031c1b3.chunk.js.map",
     "index.html": "/Landing/index.html",
     "static/css/2.3b2e5103.chunk.css.map": "/Landing/static/css/2.3b2e5103.chunk.css.map",
-    "static/css/main.0ab3b5ea.chunk.css.map": "/Landing/static/css/main.0ab3b5ea.chunk.css.map",
+    "static/css/main.24db3147.chunk.css.map": "/Landing/static/css/main.24db3147.chunk.css.map",
     "static/js/2.e35cdd29.chunk.js.LICENSE.txt": "/Landing/static/js/2.e35cdd29.chunk.js.LICENSE.txt",
     "static/media/EWD.74e5377f.png": "/Landing/static/media/EWD.74e5377f.png",
     "static/media/bg-wheel.46e36009.svg": "/Landing/static/media/bg-wheel.46e36009.svg",
@@ -27,7 +27,7 @@
     "static/media/lemonade.692b8da3.svg": "/Landing/static/media/lemonade.692b8da3.svg",
     "static/media/lemonade3D1.65bdd697.png": "/Landing/static/media/lemonade3D1.65bdd697.png",
     "static/media/lemonade3D2.7e69de0f.png": "/Landing/static/media/lemonade3D2.7e69de0f.png",
-    "static/media/logonegre.2e2d5d1a.png": "/Landing/static/media/logonegre.2e2d5d1a.png",
+    "static/media/lemonadeLogo.547b0299.png": "/Landing/static/media/lemonadeLogo.547b0299.png",
     "static/media/Lotto.scss": "/Landing/static/media/lotto-bg.a6dd4a58.png",
     "static/media/mint-obj.b4499ec4.png": "/Landing/static/media/mint-obj.b4499ec4.png",
     "static/media/susu.3533aeba.png": "/Landing/static/media/susu.3533aeba.png"
@@ -36,7 +36,7 @@
     "static/js/runtime-main.024217ee.js",
     "static/css/2.3b2e5103.chunk.css",
     "static/js/2.e35cdd29.chunk.js",
-    "static/css/main.0ab3b5ea.chunk.css",
-    "static/js/main.70479a17.chunk.js"
+    "static/css/main.24db3147.chunk.css",
+    "static/js/main.f76b7754.chunk.js"
   ]
 }
