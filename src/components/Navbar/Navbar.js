@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import lemon from '../../assets/lemon-logo.svg'
 import './Navbar.scss'
-import logonegre from '../../assets/logonegre.png'
+import logonegre from '../../assets/lemonadeLogo.png'
 const Navbar = () => {
   const windowSize = window.innerWidth
   const [showNav, setShowNav] = useState(false)

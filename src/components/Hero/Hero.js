@@ -53,9 +53,8 @@ const Hero = () => {
         <img className="logo" src={lemonade3D1} alt="" />
       </div>
       <div className="text-wrapper">
-        <p>
-          <img height="100px" src={lemonNetwork}></img>{' '}
-        </p>
+        <p></p>
+        <p></p>
         <p>
           Explore LEMONADE Ecosystem, Decentralized Finance for Eco-Traders{' '}
           <br />
