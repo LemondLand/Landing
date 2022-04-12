@@ -475,7 +475,14 @@ const Lotto = () => {
             <div className="buttonBoss">
               <a href=" https://rules.lemonade.land/lottery/" target="_blank">
                 <div>
-                  More Info <b>ENG </b>
+                  More Info <b>ENG </b>/{' '}
+                </div>
+              </a>
+              <div> </div>
+              <a href="https://rules.lemonade.land/loteria/" target="_blank">
+                <div>
+                  {' '}
+                  <b>ESP</b>
                 </div>
               </a>
             </div>
