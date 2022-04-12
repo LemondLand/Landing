@@ -470,24 +470,22 @@ const Lotto = () => {
               </div>
             )}
           </div>
+          <br />
           <div>
             <div className="buttonBoss">
-              <a
-                href="https://firebasestorage.googleapis.com/v0/b/energy-list.appspot.com/o/Lotto_ENG.pdf?alt=media"
-                target="_blank"
-              >
+              <a href=" https://rules.lemonade.land/lottery/" target="_blank">
                 <div>
-                  More Info <b>ENG </b>/{' '}
+                  More Info <b>ENG </b>
                 </div>
               </a>
-              <div> </div>
-              <a
-                href="https://firebasestorage.googleapis.com/v0/b/energy-list.appspot.com/o/Lotto_ESP.pdf?alt=media"
-                target="_blank"
-              >
+            </div>
+            <div className="buttonBoss"></div>
+          </div>
+          <div>
+            <div className="buttonBoss">
+              <a href="https://rules.lemonade.land/faq-en/" target="_blank">
                 <div>
-                  {' '}
-                  <b>ESP</b>
+                  <b>FAQS </b>
                 </div>
               </a>
             </div>

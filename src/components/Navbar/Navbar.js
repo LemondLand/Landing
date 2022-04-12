@@ -39,9 +39,9 @@ const Navbar = () => {
             {/* <li>
               <a href="#market">Markets</a>
             </li> */}
-            <li>
+            {/* <li>
               <a href="#gauge">Vaults</a>
-            </li>
+            </li> */}
             <li>
               <a
                 href="https://firebasestorage.googleapis.com/v0/b/lemon-network.appspot.com/o/ICO%2FLEMON%20White%20Paper.pdf?alt=media"

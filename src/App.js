@@ -32,9 +32,9 @@ function App() {
       <div id="farms">
         <SavingsMid />
       </div>
-      <div id="gauge">
+      {/* <div id="gauge">
         <Gauge />
-      </div>
+      </div> */}
       <div id="lotto">
         <Lotto />
       </div>
